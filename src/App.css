@@ -29,7 +29,6 @@
 }
 
 /* STORY */
-
 .story-img {
   width: 100%;
   display: block;
@@ -53,12 +52,39 @@
 .story-cover-div {
   background-color: transparent;
   color: aliceblue;
-  /* height: 100%; */
 }
 
 .ReactCollapse--collapse {
   height: 10rem;
-  transition: height 1500ms;
+  transition: height 1000ms;
+}
+
+/* NFT */
+.nft-background-img-div {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.nft-background-img {
+  width: 100%;
+  display: block;
+}
+
+.slick-slider {
+  background-color: black;
+  position: absolute;
+  top: -13rem;
+  height: 0;
+}
+
+.go-to-opensea-btn {
+  position: absolute;
+  display: block;
+  bottom: 1.5rem;
+  left: calc(50% - 4rem);
+  width: 8rem;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 600px) {
@@ -75,5 +101,15 @@
     position: absolute;
     left: calc(50% - 3.6%);
     bottom: 1.4rem;
+  }
+
+  .slick-slider {
+    top: -68rem;
+  }
+  
+  .go-to-opensea-btn {
+    bottom: 10.5rem;
+    left: calc(50% - 11rem);
+    width: 22rem;
   }
 }
