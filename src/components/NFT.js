@@ -16,8 +16,8 @@ function NFT() {
         arrows: false,
         dots: false
     };
-    
     const imgList = [NFTFOX1, NFTFOX2, NFTFOX3, NFTFOX4, NFTFOX5, NFTFOX6];
+    
     return (
         <Fragment>
             <div className='nft-background-img-div'>
