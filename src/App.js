@@ -14,7 +14,7 @@ function App() {
       {/* Navigation Bar */}
       <div className='nav-bar-div'>
         {menu_list.map((v, i) => (
-          <Link activeClass="active" className="nav-bar-link" to={`section-${i}`} spy={true} smooth={true} duration={500}>{v}</Link>
+          <Link activeClass="active" className="nav-bar-link" key={`section-${i}`} to={`section-${i}`} spy={true} smooth={true} duration={500}>{v}</Link>
         ))}
       </div>
       {/* Main */}

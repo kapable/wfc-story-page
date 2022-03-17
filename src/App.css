@@ -1,7 +1,9 @@
+/* APP */
 .App {
   width: 100%;
 }
 
+/* NAVIGATION BAR */
 .nav-bar-div {
   position: sticky;
   top: 0;
@@ -10,18 +12,53 @@
   display: flex;
   align-items: center;
   height: 3rem;
+  z-index: 1;
 }
 
 .nav-bar-link {
   color: white;
-  margin: 0 0.5rem;
+  margin: 0 0.25rem;
   cursor: pointer;
   font-size: 0.5rem;
 }
 
+/* MAIN */
 .main-img {
   width: 100%;
   display: block;
+}
+
+/* STORY */
+
+.story-img {
+  width: 100%;
+  display: block;
+}
+
+.story-fox-img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.story-arrow {
+  width: 1rem;
+  margin: 0 auto;
+  position: absolute;
+  left: calc(50% - .8rem);
+  bottom: .7rem;
+  cursor: pointer;
+}
+
+.story-cover-div {
+  background-color: transparent;
+  color: aliceblue;
+  /* height: 100%; */
+}
+
+.ReactCollapse--collapse {
+  height: 10rem;
+  transition: height 1500ms;
 }
 
 @media only screen and (min-width: 600px) {
@@ -30,5 +67,13 @@
     font-size: 1rem;
     margin: 0 1rem;
     cursor: pointer;
+  }
+
+  .story-arrow {
+    width: 5%;
+    margin: 0 auto;
+    position: absolute;
+    left: calc(50% - 3.6%);
+    bottom: 1.4rem;
   }
 }
