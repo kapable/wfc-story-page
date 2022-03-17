@@ -1,38 +1,115 @@
+/* APP */
 .App {
-  text-align: center;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* NAVIGATION BAR */
+.nav-bar-div {
+  position: sticky;
+  top: 0;
+  background-color: black;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  z-index: 1;
+}
+
+.nav-bar-link {
   color: white;
+  margin: 0 0.25rem;
+  cursor: pointer;
+  font-size: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* MAIN */
+.main-img {
+  width: 100%;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* STORY */
+.story-img {
+  width: 100%;
+  display: block;
+}
+
+.story-fox-img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.story-arrow {
+  width: 1rem;
+  margin: 0 auto;
+  position: absolute;
+  left: calc(50% - .8rem);
+  bottom: .7rem;
+  cursor: pointer;
+}
+
+.story-cover-div {
+  background-color: transparent;
+  color: aliceblue;
+}
+
+.ReactCollapse--collapse {
+  height: 10rem;
+  transition: height 1000ms;
+}
+
+/* NFT */
+.nft-background-img-div {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.nft-background-img {
+  width: 100%;
+  display: block;
+}
+
+.slick-slider {
+  background-color: black;
+  position: absolute;
+  top: -13rem;
+  height: 0;
+}
+
+.go-to-opensea-btn {
+  position: absolute;
+  display: block;
+  bottom: 1.5rem;
+  left: calc(50% - 4rem);
+  width: 8rem;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .nav-bar-link {
+    color: white;
+    font-size: 1rem;
+    margin: 0 1rem;
+    cursor: pointer;
   }
-  to {
-    transform: rotate(360deg);
+
+  .story-arrow {
+    width: 5%;
+    margin: 0 auto;
+    position: absolute;
+    left: calc(50% - 3.6%);
+    bottom: 1.4rem;
+  }
+
+  .slick-slider {
+    top: -68rem;
+  }
+  
+  .go-to-opensea-btn {
+    bottom: 10.5rem;
+    left: calc(50% - 11rem);
+    width: 22rem;
   }
 }
