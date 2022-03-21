@@ -5,7 +5,7 @@ import Story from './components/Story.js';
 import NFT from './components/NFT.js';
 import Roadmap from './components/Roadmap.js';
 import Team from './components/Team.js';
-import Partners from './components/Partners.js';
+// import Partners from './components/Partners.js';
 
 function App() {
   const menu_list = ['Home', 'Story', 'NFT', 'Roadmap', 'Team', 'Partnership'];
@@ -28,7 +28,7 @@ function App() {
       {/* Team */}
       <Element name="section-4" className="main-element" ><Team /></Element>
       {/* Partners */}
-      <Element name="section-5" className="main-element" ><Partners /></Element>
+      {/* <Element name="section-5" className="main-element" ><Partners /></Element> */}
     </div>
   );
 };
