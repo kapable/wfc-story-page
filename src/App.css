@@ -113,3 +113,12 @@
     width: 22rem;
   }
 }
+
+/* Minting */
+.kaikas-logo {
+  width: 1rem;
+}
+
+.kaikas-wallet-address {
+  display: inline-block;
+}
