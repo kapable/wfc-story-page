@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "pbio";
+  src: url(./fonts/pbio-bold\ OTF.otf);
+}
+
 /* APP */
 .App {
   width: 100%;
@@ -13,6 +18,7 @@
   align-items: center;
   height: 3rem;
   z-index: 1;
+  font-family: 'pbio';
 }
 
 .nav-bar-link {
