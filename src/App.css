@@ -3,9 +3,15 @@
   src: url(./fonts/pbio-bold\ OTF.otf);
 }
 
+@font-face {
+  font-family: "esamanru";
+  src: url(./fonts/esamanru_Bold.otf);
+}
+
 /* APP */
 .App {
   width: 100%;
+  background-color: black;
 }
 
 /* NAVIGATION BAR */
@@ -29,9 +35,53 @@
 }
 
 /* MAIN */
-.main-img {
+
+.main-div {
+  position: relative;
+}
+
+.main-title {
+  font-size: 1rem;
+  position: absolute;
+  color: white;
+  font-family: 'esamanru';
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 230px;
+}
+
+.main-subtitle {
+  font-size: 0.7rem;
+  position: absolute;
+  color: white;
+  top: 2rem;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 160px;
+  font-weight: bold;
+}
+
+.main-subtitle-bold {
+  font-size: 1rem;
+  display: inline;
+  font-family: 'esamanru';
+  color: #d04c4c;
+}
+
+.main-background {
   width: 100%;
-  display: block;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.main-fox {
+  width: 100%;
+  position: absolute;
+  bottom: 0rem;
 }
 
 /* STORY */
@@ -66,6 +116,25 @@
 }
 
 /* NFT */
+.nft-title {
+  font-size: 0.7rem;
+  position: absolute;
+  color: white;
+  top: 2rem;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 80px;
+  font-weight: bold;
+  font-family: 'esamanru';
+}
+
+.nft-title-bold {
+  font-size: 1rem;
+  display: inline;
+  color: #d04c4c;
+}
 .nft-background-img-div {
   position: relative;
   justify-content: center;
@@ -74,12 +143,12 @@
 
 .nft-background-img {
   width: 100%;
+  height: 18rem;
   display: block;
 }
 
 .slick-slider {
   background-color: black;
-  position: absolute;
   top: -13rem;
   height: 0;
 }
@@ -93,7 +162,99 @@
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 600px) {
+/* ROADMAP */
+.roadmap-img {
+  width: 100%;
+}
+
+/* TEAM */
+.team-img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 480px) {
+  .main-title {
+    font-size: 1.3rem;
+    width: 300px;
+  }
+  .main-subtitle {
+    font-size: 1rem;
+    width: 210px;
+    top: 2.5rem
+  }
+  .main-subtitle-bold {
+    font-size: 1.3rem;
+  }
+  .main-background {
+    height: 20rem;
+  }
+
+  .nft-title {
+    font-size: 1.5rem;
+    width: 170px;
+    top: 2.5rem
+  }
+
+  .nft-title-bold {
+    font-size: 2rem;
+  }
+
+  .nft-background-img {
+    height: 25rem;
+  }
+
+  .slick-slider {
+    top: -16rem;
+    height: 0rem;
+  }
+
+  .go-to-opensea-btn {
+    left: calc(50% - 6rem);
+    width: 12rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-title {
+    font-size: 1.8rem;
+    width: 415px;
+  }
+  .main-subtitle {
+    font-size: 1.4rem;
+    width: 290px;
+    top: 3.5rem
+  }
+  .main-subtitle-bold {
+    font-size: 1.8rem;
+  }
+
+  .main-fox {
+    width: 70%;
+    margin: 0 15%;
+  }
+  .main-background {
+    height: 24rem;
+  }
+
+  .story-fox-img {
+    width: 70%;
+    margin: 0 15%;
+  }
+
+  .nft-title {
+    font-size: 2.5rem;
+    width: 260px;
+    top: 2.5rem
+  }
+
+  .nft-title-bold {
+    font-size: 3rem;
+  }
+
+  .nft-background-img {
+    height: 34rem;
+  }
+
   .nav-bar-link {
     color: white;
     font-size: 1rem;
@@ -110,13 +271,119 @@
   }
 
   .slick-slider {
-    top: -68rem;
+    top: -23rem;
   }
   
   .go-to-opensea-btn {
-    bottom: 10.5rem;
-    left: calc(50% - 11rem);
-    width: 22rem;
+    bottom: 3.5rem;
+    left: calc(50% - 9rem);
+    width: 18rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-title {
+    font-size: 2.5rem;
+    width: 580px;
+  }
+  .main-subtitle {
+    font-size: 2rem;
+    width: 410px;
+    top: 5.5rem
+  }
+  .main-subtitle-bold {
+    font-size: 2.5rem;
+  }
+
+  .main-fox {
+    width: 70%;
+    margin: 0 15%;
+  }
+
+  .main-background {
+    height: 33rem;
+  }
+
+  .story-fox-img {
+    width: 70%;
+    margin: 0 15%;
+  }
+
+  .nft-title {
+    font-size: 2.7rem;
+    width: 280px;
+    top: 2.5rem
+  }
+
+  .nft-title-bold {
+    font-size: 3.3rem;
+  }
+
+  .nft-background-img {
+    height: 43rem;
+  }
+
+  .slick-slider {
+    top: -31rem;
+  }
+  
+  .go-to-opensea-btn {
+    bottom: 6.5rem;
+    left: calc(50% - 9rem);
+    width: 18rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-title {
+    font-size: 3rem;
+    width: 690px;
+  }
+  .main-subtitle {
+    font-size: 2.5rem;
+    width: 490px;
+    top: 6.5rem
+  }
+  .main-subtitle-bold {
+    font-size: 3rem;
+  }
+
+  .main-fox {
+    width: 70%;
+    margin: 0 15%;
+  }
+
+  .main-background {
+    height: 40rem;
+  }
+
+  .story-fox-img {
+    width: 70%;
+    margin: 0 15%;
+  }
+
+  .nft-title {
+    font-size: 3.3rem;
+    width: 350px;
+    top: 2.5rem
+  }
+
+  .nft-title-bold {
+    font-size: 4rem;
+  }
+
+  .nft-background-img {
+    height: 53rem;
+  }
+
+  .slick-slider {
+    top: -37rem;
+  }
+  
+  .go-to-opensea-btn {
+    bottom: 5.5rem;
+    left: calc(50% - 9rem);
+    width: 18rem;
   }
 }
 

@@ -3,7 +3,7 @@ import TEAMIMG from '../images/team.png';
 
 function Main() {
     return (
-        <img src={TEAMIMG} alt="main-img" className='main-img' />
+        <img src={TEAMIMG} alt="team-img" className='team-img' />
     );
 };
 
