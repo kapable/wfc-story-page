@@ -1,23 +1,9 @@
 import React, { Fragment } from 'react';
 import { NFTFOX1, NFTFOX2, NFTFOX3, NFTFOX4, NFTFOX5, NFTFOX6, NFTBACKGROUND, OPENSEABTN } from '../images';
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function NFT() {
-    const settings = {
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
-        cssEase: "linear",
-        arrows: false,
-        dots: false,
-        useCSS: true,
-        adaptiveHeight: true,
-    };
     const imgList = [NFTFOX1, NFTFOX2, NFTFOX3, NFTFOX4, NFTFOX5, NFTFOX6, NFTFOX1, NFTFOX2, NFTFOX3, NFTFOX4, NFTFOX5, NFTFOX6, NFTFOX1, NFTFOX2, NFTFOX3, NFTFOX4, NFTFOX5, NFTFOX6];
     
     return (
