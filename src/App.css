@@ -7,6 +7,10 @@
   font-family: "esamanru";
   src: url(./fonts/esamanru_Bold.otf);
 }
+@font-face {
+  font-family: "esamanruM";
+  src: url(./fonts/esamanru_Medium.otf);
+}
 
 /* APP */
 .App {
@@ -172,6 +176,63 @@
   width: 100%;
 }
 
+.team-div {
+  width: 100%;
+  height: 15rem;
+}
+
+.team-background-container {
+  position: relative; 
+  margin: 0 auto;
+  background:url(./images/team-background.png) no-repeat center center;
+  background-size:cover;
+  width:100%;
+  height:50rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.team-title {
+  color: white;
+  font-family: 'esamanru';
+  font-size: 1rem;
+  position: absolute;
+  top: 2rem;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 100px;
+  font-weight: bold;
+}
+
+.team-title-bold {
+  font-size: 1.2rem;
+  color: #d04c4c;
+}
+
+.team-member-row {
+  position: absolute;
+  top: 7rem;
+}
+
+.team-member-name {
+  color: white;
+  font-family: 'esamanru';
+  font-size: 0.7rem;
+}
+
+.team-member-avatar {
+  width: 7rem;
+}
+
+.team-member-title {
+  color: white;
+  font-family: 'esamanruM';
+  font-size: 0.5rem;
+  margin-top: 1rem;
+}
+
 @media only screen and (min-width: 480px) {
   .main-title {
     font-size: 1.3rem;
@@ -212,6 +273,27 @@
     left: calc(50% - 6rem);
     width: 12rem;
   }
+
+  .team-title {
+    font-size: 1.2rem;
+  }
+
+  .team-title-bold {
+    font-size: 1.6rem;
+  }
+
+  .team-member-name {
+    font-size: 1rem;
+  }
+  
+  .team-member-avatar {
+    width: 8rem;
+  }
+  
+  .team-member-title {
+    font-size: 0.7rem;
+    margin-top: 1rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -221,7 +303,7 @@
   }
   .main-subtitle {
     font-size: 1.4rem;
-    width: 290px;
+    width: 300px;
     top: 3.5rem
   }
   .main-subtitle-bold {
@@ -279,6 +361,31 @@
     left: calc(50% - 9rem);
     width: 18rem;
   }
+
+  .team-title {
+    font-size: 1.5rem;
+  }
+
+  .team-title-bold {
+    font-size: 1.8rem;
+  }
+
+  .team-member-row {
+    top: 10rem
+  }
+
+  .team-member-name {
+    font-size: 1rem;
+  }
+  
+  .team-member-avatar {
+    width: 10rem;
+  }
+  
+  .team-member-title {
+    font-size: 0.7rem;
+    margin-top: 1rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -332,6 +439,33 @@
     left: calc(50% - 9rem);
     width: 18rem;
   }
+
+  .team-title {
+    top: 7rem;
+    font-size: 2.3rem;
+    width: 200px;
+  }
+
+  .team-title-bold {
+    font-size: 2.7rem;
+  }
+
+  .team-member-row {
+    top: 22rem;
+  }
+
+  .team-member-name {
+    font-size: 1.2rem;
+  }
+  
+  .team-member-avatar {
+    width: 100%;
+  }
+  
+  .team-member-title {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -384,6 +518,19 @@
     bottom: 5.5rem;
     left: calc(50% - 9rem);
     width: 18rem;
+  }
+
+  .team-member-name {
+    font-size: 1.3rem;
+  }
+  
+  .team-member-avatar {
+    width: 100%;
+  }
+  
+  .team-member-title {
+    font-size: 1.0rem;
+    margin-top: 1rem;
   }
 }
 
