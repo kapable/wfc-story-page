@@ -1,7 +1,5 @@
 import React, { useCallback } from 'react';
 import { TEAMBGLG, TEAMBGSM, TEAMLG, TEAMSM } from '../images';
-import { Row, Col } from 'antd';
-import 'antd/dist/antd.css';
 
 function Main() {
     const teamRenderer = useCallback(() => {
