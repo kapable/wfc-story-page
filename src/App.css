@@ -176,7 +176,7 @@
   font-size: 0.7rem;
   position: absolute;
   color: white;
-  top: 2rem;
+  top: 5rem;
   left: 0; 
   right: 0; 
   margin-left: auto; 
@@ -201,7 +201,7 @@
 
 .nft-background-img {
   width: 100%;
-  height: 18rem;
+  height: 22rem;
   display: block;
 }
 
@@ -216,7 +216,7 @@
 }
 
 .nft-slider {
-  top: 5rem;
+  top: 8rem;
   margin: auto;
   overflow: hidden;
   position: absolute;
@@ -231,12 +231,6 @@
 
 .nft-slide-img {
   width: 8rem;
-}
-
-.slick-slider {
-  background-color: black;
-  top: -13rem;
-  height: 0;
 }
 
 .go-to-opensea-btn {
@@ -384,7 +378,7 @@
   .nft-title {
     font-size: 1.5rem;
     width: 170px;
-    top: 2.5rem
+    top: 4.5rem
   }
 
   .nft-title-bold {
@@ -396,7 +390,7 @@
   }
 
   .nft-slider {
-    top: 8rem;
+    top: 10rem;
   }
 
   .go-to-opensea-btn {
@@ -475,7 +469,7 @@
   .nft-title {
     font-size: 2.5rem;
     width: 260px;
-    top: 2.5rem
+    top: 5.5rem
   }
 
   .nft-title-bold {
@@ -502,7 +496,7 @@
   }
 
   .nft-slider {
-    top: 10rem;
+    top: 12rem;
   }
 
   .nft-slide-img {
@@ -604,7 +598,7 @@
   .nft-title {
     font-size: 2.7rem;
     width: 280px;
-    top: 2.5rem
+    top: 5.5rem
   }
 
   .nft-title-bold {
@@ -616,19 +610,15 @@
   }
 
   .nft-slider {
-    top: 11rem;
+    top: 14rem;
   }
 
   .nft-slide-img {
     width: 17rem;
   }
-
-  .slick-slider {
-    top: -31rem;
-  }
   
   .go-to-opensea-btn {
-    bottom: 6.5rem;
+    bottom: 4.5rem;
     left: calc(50% - 9rem);
     width: 18rem;
   }
@@ -714,7 +704,7 @@
   .nft-title {
     font-size: 3.3rem;
     width: 350px;
-    top: 2.5rem
+    top: 6.5rem
   }
 
   .nft-title-bold {
@@ -726,7 +716,7 @@
   }
 
   .nft-slider {
-    top: 13rem;
+    top: 16rem;
   }
 
   .nft-slide-img {
