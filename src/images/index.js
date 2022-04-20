@@ -14,3 +14,7 @@ export const JACOB = require('./JACOB.png');
 export const JAMIE = require('./JAMIE.png');
 export const LOUIS = require('./LOUIS.png');
 export const SEEYONG = require('./SEE-YONG.png');
+export const TEAMBGLG = require('./team-background-lg.png');
+export const TEAMBGSM = require('./team-background-sm.png');
+export const TEAMLG = require('./team-lg.png');
+export const TEAMSM = require('./team-sm.png');

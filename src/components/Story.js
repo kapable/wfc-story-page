@@ -15,6 +15,7 @@ function Story() {
     return (
         <div style={{position: "relative", overflow: 'hidden'}}>
             <img src={STORYTOP} alt="story-img" className='story-img' />
+            <p className='story-title'>STORY</p>
             <p className='story-comment-top'>
                 여러 가지 일이 조건에 의해 시간과 공간의<br />
                 갈래가 나뉘어 서로 다른 일이 일어나는<br />

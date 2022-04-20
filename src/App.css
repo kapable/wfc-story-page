@@ -101,10 +101,25 @@
   display: block;
 }
 
+.story-title {
+  color: white;
+  width: 100%;
+  top: 4rem;
+  font-size: 1.2rem;
+  position: absolute;
+  color: white;
+  font-family: 'esamanru';
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+  text-align: center;
+}
+
 .story-comment-top {
   color: white;
   width: 50%;
-  top: 2rem;
+  top: 8rem;
   font-size: 0.6rem;
   position: absolute;
   color: white;
@@ -119,7 +134,7 @@
 .story-comment-bottom {
   color: white;
   width: 50%;
-  bottom: 7rem;
+  bottom: 1rem;
   font-size: 0.6rem;
   position: relative;
   color: white;
@@ -240,7 +255,7 @@
 
 .roadmap-div {
   /* width: 100%; */
-  height: 50rem;
+  height: 55rem;
 }
 
 .roadmap-background-container {
@@ -249,7 +264,7 @@
   background:url(./images/roadmap-background.png) no-repeat center center;
   background-size:cover;
   /* width:100%; */
-  height:50rem;
+  height:55rem;
   text-align: center;
   overflow: hidden;
 }
@@ -259,7 +274,7 @@
   font-family: 'esamanru';
   font-size: 1rem;
   position: absolute;
-  top: 2rem;
+  top: 5rem;
   left: 0; 
   right: 0; 
   margin-left: auto; 
@@ -274,7 +289,7 @@
 
 .roadmap-contents {
   position: absolute;
-  top: 5rem;
+  top: 8rem;
   left: 20%;
   width: 60%;
 }
@@ -287,6 +302,21 @@
 .team-div {
   width: 100%;
   height: 15rem;
+  position: relative;
+  text-align: center;
+}
+
+.team-background {
+  width: 100%;
+  /* height: 15rem; */
+  object-fit: cover;
+}
+
+.team-contents {
+  left: 15%;
+  width: 70%;
+  position: absolute;
+  top: 15rem;
 }
 
 .team-background-container {
@@ -303,9 +333,9 @@
 .team-title {
   color: white;
   font-family: 'esamanru';
-  font-size: 1rem;
+  font-size: 1.3rem;
   position: absolute;
-  top: 2rem;
+  top: 6rem;
   left: 0; 
   right: 0; 
   margin-left: auto; 
@@ -315,30 +345,8 @@
 }
 
 .team-title-bold {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #d04c4c;
-}
-
-.team-member-row {
-  position: absolute;
-  top: 7rem;
-}
-
-.team-member-name {
-  color: white;
-  font-family: 'esamanru';
-  font-size: 0.7rem;
-}
-
-.team-member-avatar {
-  width: 7rem;
-}
-
-.team-member-title {
-  color: white;
-  font-family: 'esamanruM';
-  font-size: 0.5rem;
-  margin-top: 1rem;
 }
 
 @media only screen and (min-width: 480px) {
@@ -359,15 +367,17 @@
     height: 20rem;
   }
 
-  .story-img {
-    width: 100%;
+  .story-title {
+    font-size: 1.5rem;
   }
 
   .story-img {
+    width: 100%;
     height: 20rem;
   }
 
   .story-comment-top, .story-comment-bottom {
+    width: 65%;
     font-size: 0.9rem;
   }
 
@@ -385,9 +395,8 @@
     height: 25rem;
   }
 
-  .slick-slider {
-    top: -16rem;
-    height: 0rem;
+  .nft-slider {
+    top: 8rem;
   }
 
   .go-to-opensea-btn {
@@ -404,33 +413,22 @@
   }
 
   .roadmap-title {
+    top: 8rem;
     font-size: 1.5rem;
   }
 
   .roadmap-contents {
+    top: 13rem;
     left: 20%;
     width: 60%;
   }
 
   .team-title {
-    font-size: 1.2rem;
-  }
-
-  .team-title-bold {
     font-size: 1.6rem;
   }
 
-  .team-member-name {
-    font-size: 1rem;
-  }
-  
-  .team-member-avatar {
-    width: 8rem;
-  }
-  
-  .team-member-title {
-    font-size: 0.7rem;
-    margin-top: 1rem;
+  .team-title-bold {
+    font-size: 1.9rem;
   }
 }
 
@@ -455,6 +453,10 @@
   }
   .main-background {
     height: 24rem;
+  }
+
+  .story-title {
+    font-size: 1.8rem;
   }
 
   .story-img {
@@ -518,11 +520,11 @@
   }
 
   .roadmap-div {
-    height: 105rem;
+    height: 120rem;
   }
 
   .roadmap-background-container {
-    height: 105rem;
+    height: 120rem;
   }
 
   .roadmap-title {
@@ -530,32 +532,21 @@
   }
 
   .roadmap-contents {
-    top: 8rem;
+    top: 15rem;
   }
 
   .team-title {
-    font-size: 1.5rem;
+    width: 190px;
+    top: 9rem;
+    font-size: 2rem;
   }
 
   .team-title-bold {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
 
-  .team-member-row {
-    top: 10rem
-  }
-
-  .team-member-name {
-    font-size: 1rem;
-  }
-  
-  .team-member-avatar {
-    width: 10rem;
-  }
-  
-  .team-member-title {
-    font-size: 0.7rem;
-    margin-top: 1rem;
+  .team-contents {
+    top: 25rem;
   }
 }
 
@@ -583,12 +574,26 @@
     height: 33rem;
   }
 
+  .story-title {
+    font-size: 2.5rem;
+    top: 8rem;
+  }
+
   .story-img {
-    height: 26rem;
+    height: 32rem;
   }
 
   .story-comment-top, .story-comment-bottom {
-    font-size: 1.3rem;
+    width: 75%;
+    font-size: 1.4rem;
+  }
+
+  .story-comment-top {
+    top: 15rem;
+  }
+
+  .story-comment-bottom {
+    bottom: 2rem;
   }
 
   .story-fox-img {
@@ -629,11 +634,11 @@
   }
 
   .roadmap-div {
-    height: 70rem;
+    height: 80rem;
   }
 
   .roadmap-background-container {
-    height: 70rem;
+    height: 80rem;
   }
 
   .roadmap-title {
@@ -641,7 +646,7 @@
   }
 
   .roadmap-contents {
-    top: 10rem;
+    top: 17rem;
   }
 
   .roadmap-contents {
@@ -657,23 +662,6 @@
 
   .team-title-bold {
     font-size: 2.7rem;
-  }
-
-  .team-member-row {
-    top: 22rem;
-  }
-
-  .team-member-name {
-    font-size: 1.2rem;
-  }
-  
-  .team-member-avatar {
-    width: 100%;
-  }
-  
-  .team-member-title {
-    font-size: 1rem;
-    margin-top: 1rem;
   }
 }
 
@@ -701,12 +689,21 @@
     height: 50rem;
   }
 
+  .story-title {
+    font-size: 3rem;
+    top: 11rem;
+  }
+
   .story-img {
-    height: 30rem;
+    height: 35rem;
   }
 
   .story-comment-top, .story-comment-bottom {
     font-size: 1.5rem;
+  }
+
+  .story-comment-top {
+    top: 19rem;
   }
 
   .story-fox-img {
@@ -747,11 +744,11 @@
   }
 
   .roadmap-div {
-    height: 80rem;
+    height: 95rem;
   }
 
   .roadmap-background-container {
-    height: 80rem;
+    height: 95rem;
   }
 
   .roadmap-title {
@@ -759,25 +756,12 @@
   }
 
   .roadmap-contents {
-    top: 10rem;
+    top: 17rem;
   }
 
   .roadmap-contents {
     left: 22%;
     width: 58%;
-  }
-
-  .team-member-name {
-    font-size: 1.3rem;
-  }
-  
-  .team-member-avatar {
-    width: 100%;
-  }
-  
-  .team-member-title {
-    font-size: 1.0rem;
-    margin-top: 1rem;
   }
 }
 
