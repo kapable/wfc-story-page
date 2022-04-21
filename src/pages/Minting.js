@@ -1,5 +1,11 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
+import '../Minting.css';
 import axios from 'axios';
+import MintingHeader from '../components/Minting/MintingHeader';
+import MintingBlockNumber from '../components/Minting/MintingBlockNumber';
+import MintingInfo from '../components/Minting/MintingInfo';
+import MintingAmount from '../components/Minting/MintingAmount';
+import MintingButton from '../components/Minting/MintingButton';
 
 const Minting = () => {
     const [walletAddress, setWalletAddress] = useState(null);
@@ -18,7 +24,12 @@ const Minting = () => {
     };
 
     return (
-        <Fragment>
+        <div className='minting-background-div'>
+            <MintingHeader />
+            <MintingBlockNumber />
+            <MintingInfo />
+            <MintingAmount />
+            <MintingButton />
             <div>Minting</div>
             <button onClick={onKaikasLoginClick}>kaikas login</button>
             {walletAddress
@@ -28,7 +39,7 @@ const Minting = () => {
                 <p className='kaikas-wallet-address'>{walletAddress[0].slice(0, 7) + '...' + walletAddress[0].slice(-7)}</p>
             </button>)
             : <p>카이카스 로그인</p>}
-        </Fragment>
+        </div>
     );
 };
 

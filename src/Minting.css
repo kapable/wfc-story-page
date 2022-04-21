@@ -1,8 +1,60 @@
 /* Minting */
-.kaikas-logo {
-    width: 1rem;
+.minting-background-div {
+    height: 100vh;
+    background-color: black;
+    color: white;
 }
 
 .kaikas-wallet-address {
+    display: inline-block;
+}
+
+/* HEADER */
+.minting-header-div {
+    align-items: center;
+    padding: 1rem 0;
+    margin: 0 5%;
+}
+.minting-header-wfc, .minting-header-wallet {
+    vertical-align: middle;
+    display: inline-block;
+    width: 50%;
+}
+
+.minting-header-wfc-inner-div {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.wfc-logo {
+    width: 0.7rem;
+}
+
+.wfc-name {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 0.7rem;
+}
+.minting-header-wallet-button {
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    border-radius: 1.5rem;
+    height: 32px;
+    border-color: white;
+    border-style: solid;
+}
+
+.kaikas-logo {
+    width: 0.8rem;
+    position: relative;
+    top:10%;
+}
+
+.minting-header-wallet-comment {
+    
+    font-size: 0.5rem;
     display: inline-block;
 }
