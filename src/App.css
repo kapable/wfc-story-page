@@ -178,7 +178,7 @@
   font-size: 0.7rem;
   position: absolute;
   color: white;
-  top: 5rem;
+  top: 3rem;
   left: 0; 
   right: 0; 
   margin-left: auto; 
@@ -203,32 +203,12 @@
 
 .nft-background-img {
   width: 100%;
-  height: 22rem;
+  height: 12rem;
   display: block;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translate(calc(-250px * 7));
-  }
-}
-
-.nft-slider {
-  top: 8rem;
-  margin: auto;
-  overflow: hidden;
-  position: absolute;
-  width: auto;
-}
-
-.nft-slider .nft-slider-track {
-  animation: scroll 30s linear infinite;
-  display: flex;
-  width: calc(250px * 14);
+.nft-marquee-slider {
+  bottom: 5.5rem;
 }
 
 .nft-slide-img {
@@ -377,11 +357,15 @@
   }
 
   .nft-background-img {
-    height: 25rem;
+    height: 20rem;
   }
 
-  .nft-slider {
-    top: 10rem;
+  .nft-slide-img {
+    width: 12rem;
+  }
+
+  .nft-marquee-slider {
+    bottom: 8rem;
   }
 
   .go-to-opensea-btn {
@@ -491,12 +475,12 @@
     bottom: 1.4rem;
   }
 
-  .nft-slider {
-    top: 12rem;
+  .nft-marquee-slider {
+    bottom: 15rem;
   }
 
   .nft-slide-img {
-    width: 12rem;
+    width: 17rem;
   }
 
   .slick-slider {
@@ -505,8 +489,8 @@
   
   .go-to-opensea-btn {
     bottom: 3.5rem;
-    left: calc(50% - 9rem);
-    width: 18rem;
+    left: calc(50% - 8rem);
+    width: 16rem;
   }
 
   .roadmap-div {
@@ -605,16 +589,16 @@
     height: 43rem;
   }
 
-  .nft-slider {
-    top: 14rem;
+  .nft-marquee-slider {
+    bottom: 24rem;
   }
 
   .nft-slide-img {
-    width: 17rem;
+    width: 20rem;
   }
   
   .go-to-opensea-btn {
-    bottom: 4.5rem;
+    bottom: 11.5rem;
     left: calc(50% - 9rem);
     width: 18rem;
   }
@@ -704,7 +688,7 @@
   .nft-title {
     font-size: 3.3rem;
     width: 350px;
-    top: 6.5rem
+    top: 4.5rem
   }
 
   .nft-title-bold {
@@ -712,25 +696,21 @@
   }
 
   .nft-background-img {
-    height: 53rem;
+    height: 43rem;
   }
 
-  .nft-slider {
-    top: 16rem;
+  .nft-marquee-slider {
+    bottom: 23rem;
   }
 
   .nft-slide-img {
-    width: 22rem;
-  }
-
-  .slick-slider {
-    top: -37rem;
+    width: 25rem;
   }
   
   .go-to-opensea-btn {
-    bottom: 5.5rem;
-    left: calc(50% - 9rem);
-    width: 18rem;
+    bottom: 10.5rem;
+    left: calc(50% - 11rem);
+    width: 22rem;
   }
 
   .roadmap-div {
@@ -753,13 +733,4 @@
     left: 22%;
     width: 58%;
   }
-}
-
-/* Minting */
-.kaikas-logo {
-  width: 1rem;
-}
-
-.kaikas-wallet-address {
-  display: inline-block;
 }
