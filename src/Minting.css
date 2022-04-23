@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "pretendard";
+    src: url(./fonts/Pretendard-Regular.otf);
+}
 /* Minting */
 .minting-background-div {
     height: 100vh;
@@ -57,4 +61,86 @@
     
     font-size: 0.5rem;
     display: inline-block;
+}
+
+/* BLOCK NUMBER */
+.minting-blocknumber-div {
+    font-family: "pretendard";
+    font-weight: bolder;
+    position: relative;
+    text-align: center;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.minting-blocknumber-title-div {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    background-color: grey;
+    height: 1.5rem;
+    border: 0.1rem solid pink;
+    border-radius: 3rem;
+    font-size: 1rem;
+}
+
+.minting-blocknumber-title-div > p {
+    font-size: larger;
+    margin-block-start: 0%;
+    margin-block-end: 0;
+}
+
+.minting-blocknumber-title-bold {
+    color: #d04c4c;
+}
+
+.minting-blocknumber-contents-div {
+    background-color: grey;
+    border: 0.1rem solid pink;
+    border-top: none;
+    position: absolute;
+    width: 100%;
+    top: 1rem;
+}
+
+.minting-blocknumber-contents-upper-div {
+    height: 6.5rem;
+    width: 80%;
+    margin: 0 10%;
+    border-bottom: 0.1rem solid pink;
+}
+
+.minting-blocknumber-contents-upper-number-div,
+.minting-blocknumber-contents-bottom-number-div {
+    width: 65%;
+    margin: 1rem auto 0;
+    background-color: black;
+    height: 2.5rem;
+    border-radius: 5rem;
+}
+
+.minting-blocknumber-contents-upper-number,
+.minting-blocknumber-contents-bottom-number {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: larger;
+}
+
+.minting-blocknumber-contents-upper-number {
+    color: #ffe17f;
+}
+
+.minting-blocknumber-contents-upper-title,
+.minting-blocknumber-contents-bottom-title {
+    margin-block-start: 2.5rem;
+    margin-block-end: 0;
+}
+
+.minting-blocknumber-contents-bottom-div {
+    height: 6.5rem;
+    width: 80%;
+    margin: 0 10%;
 }
