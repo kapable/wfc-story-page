@@ -144,3 +144,12 @@
     width: 80%;
     margin: 0 10%;
 }
+
+.minting-blocknumber-under-div {
+    height: 20rem;
+}
+
+/* INFO */
+.minting-info-div {
+    position: relative;
+}

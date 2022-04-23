@@ -2,6 +2,7 @@ import React from 'react';
 
 const MintingBlockNumber = () => {
     return (
+        <>
         <div className='minting-blocknumber-div'>
             <div className='minting-blocknumber-title-div'>
                 <p className='minting-blocknumber-title'>MINTING <span className='minting-blocknumber-title-bold'>BLOCK NUMBER</span></p>
@@ -21,6 +22,8 @@ const MintingBlockNumber = () => {
                 </div>
             </div>
         </div>
+        <div className='minting-blocknumber-under-div'></div>
+        </>
     );
 };
 

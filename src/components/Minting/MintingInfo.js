@@ -2,7 +2,7 @@ import React from 'react';
 
 const MintingInfo = () => {
     return (
-        <div>MintingInfo</div>
+        <div className='minting-info-div'>MintingInfo</div>
     );
 };
 
