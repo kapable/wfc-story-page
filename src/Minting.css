@@ -3,13 +3,13 @@
     src: url(./fonts/Pretendard-Regular.otf);
 }
 :root {
-    --contents-bg-color: grey;
+    --contents-bg-color: #282828;
     --red-point-color:#d04c4c;
     --title-font: "pretendard", "Noto Sans";
 }
 /* Minting */
 .minting-background-div {
-    height: 100vh;
+    height: 1308px;
     background-color: black;
     color: white;
 }
@@ -173,7 +173,7 @@
 .minting-info-div-three {
     height: 1.8rem;
     border-radius: 1rem;
-    background-color: lightgrey;
+    background-color: #3d3d3d;
     margin: 1rem 5%;
     position: relative;
 }
@@ -230,3 +230,5 @@
 .minting-info-kalytn-logo {
     height: 0.8rem;
 }
+
+/* AMOUNT */

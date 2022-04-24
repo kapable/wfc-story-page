@@ -30,7 +30,6 @@ const Minting = () => {
             <MintingInfo />
             <MintingAmount />
             <MintingButton />
-            <div>Minting</div>
             <button onClick={onKaikasLoginClick}>kaikas login</button>
             {walletAddress
             ? (
