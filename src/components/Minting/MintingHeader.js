@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { WFCLOGO, KALYTNLOGO } from '../../images/Minting';
+import { WFCLOGO, KALYTNLOGO, WALLETICON } from '../../images/Minting';
 
 const MintingHeader = () => {
     const [walletAddress, setWalletAddress] = useState(null);
     const onKaikasLoginClick = () => {
         window.klaytn ? kaikasLogin() : alert("Kaikas를 다운로드해주세요!");
     };
+
     const kaikasLogin = async () => {
         const wallet = await window.klaytn.enable();
         setWalletAddress(wallet);
         let version = await window.klaytn.networkVersion;
         console.log('WALL', wallet[0]);
-        console.log(version);
-        await axios.get(process.env.REACT_APP_BACK_URL, `/nft/check/${wallet[0]}`)
-        .then((res) => (console.log(res)));
+        console.log('VERsion',version);
+        await axios.get(process.env.REACT_APP_BACK_URL + `/nft/check/${wallet[0]}`)
+        .then((res) => (console.log('RES', res)));
     };
     return (
         <div className='minting-header-div'>
@@ -27,8 +28,8 @@ const MintingHeader = () => {
             <div className='minting-header-wallet'>
                 {walletAddress
                 ? (
-                <button className='minting-header-wallet-button'>
-                    <img className='kaikas-logo' src={KALYTNLOGO} alt="klaytn-logo" />
+                <button className='minting-header-wallet-login'>
+                    <img className='wallet-icon' src={WALLETICON} alt="klaytn-logo" />
                     <p className='kaikas-wallet-address'>&nbsp; {walletAddress[0].slice(0, 7) + '...' + walletAddress[0].slice(-7)}</p>
                 </button>)
                 : (
