@@ -2,6 +2,18 @@
     font-family: "pretendard";
     src: url(./fonts/Pretendard-Regular.otf);
 }
+@font-face {
+    font-family: "pbio";
+    src: url(./fonts/pbio-bold\ OTF.otf);
+}
+@font-face {
+font-family: "esamanru";
+src: url(./fonts/esamanru_Bold.otf);
+}
+@font-face {
+font-family: "esamanruM";
+src: url(./fonts/esamanru_Medium.otf);
+}
 :root {
     --contents-bg-color: #282828;
     --red-point-color:#d04c4c;
@@ -66,6 +78,11 @@
     display: inline-block;
     margin-block-start: 0;
     margin-block-end: 0;
+}
+
+/* COVER */ 
+.minting-cover-div {
+    display: none;
 }
 
 /* BLOCK NUMBER */
@@ -253,20 +270,24 @@
 
 progress {
     background-color: black;
+    border-radius: 0.5rem;
     
 }
 
 progress::-webkit-progress-bar {
     background-color: black;
+    border-radius: 0.5rem;
     
 }
 
 progress::-webkit-progress-value {
     background-color: var(--point-pink);
+    border-radius: 0.5rem;
 }
 
 progress::-moz-progress-bar {
     background-color: black;
+    border-radius: 0.5rem;
     
 }
 
@@ -343,4 +364,216 @@ progress::-moz-progress-bar {
     font-family: 'pretendard';
     font-weight: bolder;
     font-size: 1.5rem;
+}
+
+/* FOOTER */
+.minting-pc-footer-div {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    /* Minting */
+    .minting-background-div {
+        height: 60rem;
+        background-color: var(--contents-bg-color);
+    }
+
+    .minting-pc-right-div {
+        width: 50%;
+        float: right;
+    }
+
+    .minting-pc-left-div {
+        width: 45%;
+        float: left;
+        margin: 0 2.5%;
+    }
+
+    /* COVER */
+    .minting-cover-div {
+        display: block;
+    }
+
+    /* HEADER */
+    .minting-header-div {
+        background-color: black;
+        margin: 0;
+    }
+    .minting-header-wfc {
+        display: none;
+    }
+
+    .minting-header-wallet {
+        width: 100%;
+        text-align: center;
+    }
+
+    .minting-header-wallet-button {
+        margin-right: 5%;
+    }
+
+    /* COVER */
+    .minting-cover-div {
+        text-align: center;
+    }
+    .minting-cover-six-fox {
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .minting-cover-title {
+        font-family: 'esamanru';
+        width: 100%;
+        font-size: 2.5rem;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin: 3.5rem auto 0;
+    }
+
+    .minting-cover-subtitle {
+        font-size: 2rem;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin: 0.5rem auto 3.5rem;
+    }
+
+    .minting-cover-subtitle-bold {
+        font-family: 'esamanru';
+        color: #d04c4c;
+    }
+
+    /* PC-RIGHT */
+    .minting-pc-right-div {
+        margin-top: 3.5rem;
+    }
+
+    .minting-pc-right-blockNumber-div {
+        width: 50%;
+        float: left;
+    }
+
+    .minting-pc-right-controler-div {
+        width: 50%;
+        float: right;
+    }
+
+    /* BLOCK NUMBER */
+    .minting-blocknumber-title-div {
+        height: 3rem;
+    }
+
+    .minting-blocknumber-title {
+        padding-top: 0.7rem;
+    }
+
+    .minting-blocknumber-contents-upper-div {
+        height: 9rem;
+    }
+
+    .minting-blocknumber-contents-upper-title {
+        margin-block-start: 5.5rem;
+        font-size: 1.3rem;
+    }
+
+    .minting-blocknumber-contents-upper-number-div {
+        width: 100%;
+        height: 3rem;
+    }
+
+    .minting-blocknumber-contents-upper-number {
+        font-size: 1.7rem;
+    }
+
+    .minting-blocknumber-contents-bottom-div {
+        height: 9rem;
+    }
+
+    .minting-blocknumber-contents-bottom-title {
+        margin-block-start: 3.5rem;
+        font-size: 1.3rem;
+    }
+
+    .minting-blocknumber-contents-bottom-number-div {
+        width: 100%;
+        height: 3rem;
+    }
+
+    .minting-blocknumber-contents-bottom-number {
+        font-size: 1.7rem;
+    }
+
+    /* AMOUNT */
+    .minting-info-div-one,
+    .minting-info-div-two,
+    .minting-info-div-three {
+        height: 2.5rem;
+        border-radius: 5rem;
+        margin-top: 2.2rem;
+    }
+
+    .minting-info-div-three {
+        margin-bottom: 2.2rem;
+    }
+
+    .minting-info-div-one-left,
+    .minting-info-div-two-left,
+    .minting-info-div-three-left {
+        border-radius: 5rem;
+        height: 2.5rem;
+    }
+
+    .minting-info-div-one-left-title,
+    .minting-info-div-two-left-title,
+    .minting-info-div-three-left-title {
+        margin: 0.7rem auto 0;
+    }
+
+    .minting-info-div-one-right,
+    .minting-info-div-two-right,
+    .minting-info-div-three-right {
+        margin-block-start: 0.7rem;
+        margin-block-end: 0;
+    }
+
+    /* AMOUNT */
+    .minting-amount-left-title {
+        font-size: 1.1rem;
+    }
+
+    /* BUTTON */
+    .minting-button-div {
+        float: left;
+        width: 95%;
+        margin: 3rem 2.5% 0;
+    }
+
+    .minting-button-text {
+        font-size: 2rem;
+        padding-top: 0.8rem;
+    }
+
+    /* FOOTER */
+    .minting-pc-footer-div {
+        background-color: black;
+        display: block;
+        width: 95%;
+        position: absolute;
+        bottom: 0;
+        height: 3rem;
+        padding: 1.5rem 2.5% 0;
+    }
+
+    .minting-footer-wfc-logo {
+        width: 1.8rem;
+    }
+    
+    .minting-footer-wfc-name {
+        font-family: 'esamanru';
+        display: inline-block;
+        vertical-align: super;
+        font-size: 1.3rem;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin: 0 auto;
+    }
 }

@@ -209,6 +209,7 @@
 
 .nft-marquee-slider {
   bottom: 5.5rem;
+  z-index: 0;
 }
 
 .nft-slide-img {
