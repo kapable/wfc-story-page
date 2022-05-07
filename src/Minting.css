@@ -366,6 +366,7 @@ progress::-moz-progress-bar {
     border-radius: 2rem;
     background: linear-gradient(to right, var(--point-pink), #ffc0a9);
     height: 4rem;
+    cursor: pointer;
 }
 
 .minting-button-text {
